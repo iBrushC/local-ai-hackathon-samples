@@ -1,0 +1,4 @@
+# mlx-vlm 0.7.8+ loads the Bonsai 2 packs natively.
+# The released mlx-lm (0.32.0) can't load them yet, so don't use mlx_lm.server here.
+mlx-vlm>=0.7.8
+huggingface_hub

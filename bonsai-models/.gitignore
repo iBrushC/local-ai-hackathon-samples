@@ -1,0 +1,9 @@
+# Downloaded runtimes and model weights
+gguf/bin/
+gguf/models/
+mlx/models/
+*.part
+
+# Python
+mlx/.venv/
+__pycache__/
