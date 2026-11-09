@@ -1,0 +1,15 @@
+# Outputs
+transcripts/
+
+# Secrets
+.env
+
+# Swift
+native/.build/
+native/.swiftpm/
+native/Package.resolved
+
+# Python
+windows-shim/.venv/
+__pycache__/
+*.egg-info/

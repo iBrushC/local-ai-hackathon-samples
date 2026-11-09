@@ -1,0 +1,11 @@
+# Custom vocabulary for Meeting Scribe (one term per line, '#' starts a comment).
+# The Pro SDK accepts up to 3000 terms. Terms shorter than 4 characters reduce accuracy.
+# Custom vocabulary is disabled for Whisper models, so Meeting Scribe switches to Parakeet when this file is used.
+Argmax
+WhisperKitPro
+SpeakerKitPro
+Parakeet
+Sortformer
+Pyannote
+eShip
+Hackathon

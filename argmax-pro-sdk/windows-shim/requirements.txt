@@ -1,0 +1,7 @@
+# Run `pip install -r requirements.txt` from the windows-shim/ folder. The path is relative to it.
+# The "light" extra gives you: mic + faster-whisper + pyannote + Kokoro TTS. All of it runs on native Windows.
+-e ../../../argmax-windows-shim[light]
+
+# Optional (Linux or WSL2 recommended, since NeMo on native Windows is painful):
+#   live --speakers        -> pip install -e "../../../argmax-windows-shim[sortformer]"
+#   --vocab / --vocab-file -> pip install -e "../../../argmax-windows-shim[parakeet]"
