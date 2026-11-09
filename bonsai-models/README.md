@@ -2,8 +2,20 @@
 
 A minimal chat window for [Bonsai 2 Small](https://huggingface.co/collections/prism-ml/bonsai-2-small) from PrismML. These are ternary-weight models (about 2 bits per weight), so a 4B model fits in about 1 GB. The whole app is one HTML page that talks to a local OpenAI-compatible server.
 
+## Quick start (any OS)
+
+```bash
+python start.py               # 4B. Downloads everything on first run, then opens the chat window
+python start.py --size 2B     # 2B | 4B | 9B
+```
+
+`start.py` needs only the Python standard library for GGUF. On Apple Silicon it uses MLX automatically if you've run `pip install -r mlx/requirements.txt`. To pick one yourself, add `--runtime gguf` or `--runtime mlx`. On Windows, `--gpu cuda-12.4` downloads the CUDA build instead of Vulkan. Run `python start.py --help` for all options.
+
+The folders below also have plain `start.ps1` / `start.sh` scripts that do the same thing.
+
 ```
 bonsai-models/
+├── start.py            cross-platform launcher (GGUF or MLX)
 ├── shared/index.html   the chat window (plain HTML + JS, no build step)
 ├── gguf/               Windows / Linux / Intel or Apple Mac: PrismML llama.cpp fork + llama-server
 └── mlx/                Apple Silicon only: mlx-vlm + mlx_vlm.server

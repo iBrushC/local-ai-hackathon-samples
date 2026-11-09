@@ -4,6 +4,8 @@ This version runs the `PQ2_0` GGUF pack on [PrismML's llama.cpp fork](https://gi
 
 ## Run
 
+**Any OS (Python):** run `python ../start.py --runtime gguf` from this folder. It accepts `--size 2B|4B|9B` and `--gpu vulkan|cpu|cuda-12.4|cuda-13.3`.
+
 **Windows (PowerShell):**
 ```powershell
 .\start.ps1                       # 4B on Vulkan

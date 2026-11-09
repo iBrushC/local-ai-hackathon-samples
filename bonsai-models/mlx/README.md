@@ -4,6 +4,13 @@ This version runs the 2-bit MLX pack with [mlx-vlm](https://github.com/Blaizzy/m
 
 ## Run
 
+**Python (in your own environment):**
+```bash
+pip install -r requirements.txt
+python ../start.py --runtime mlx --size 4B
+```
+
+**Or use the shell script, which also creates its own `.venv/`:**
 ```bash
 chmod +x start.sh
 ./start.sh        # 4B
